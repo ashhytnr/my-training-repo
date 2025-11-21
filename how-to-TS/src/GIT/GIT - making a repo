@@ -1,0 +1,31 @@
+1. make a project for the repo, set up where you want it to go etc.
+useful commands: cd, ls, mkdir
+
+2. run [ git status ]
+--- this is to check you aren't already in a git repo
+EXPECTED: fatal: not a git repository (or any of the parent directories): .git
+--- this is good! It means your folder isn't already in a git repo
+
+3. initialise the repo with [ git init ]
+--- this creates a .git folder, marking the directory as a git repository (you won't see this in github)
+EXPECTED: your terminal has git:(main)
+
+4. stage files [ git add . ]
+--- this gets your files ready for commit
+
+5. commit files [ git commit -m "initial commit" ]
+--- uh idk what to say about this yet
+
+6. create a remote repo on github
+--- just go to github and make a repo... yeah #loveTheGUI
+--- NOTE: for some reason this only works with no readme
+
+7. in the project, run [ git remote add origin https://github.com/username/repo.git ]
+--- do this with the link provided in the repo when you made it
+--- if you didn't get a link, you can copy the format above
+
+8. run [ git remote -v ]
+--- this verifies the remote connection
+
+9. push files to main [ git push -u origin main ]
+--- just for the start
