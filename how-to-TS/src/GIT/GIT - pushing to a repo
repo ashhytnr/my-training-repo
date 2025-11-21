@@ -1,0 +1,24 @@
+1. checkout a new branch using [ git checkout -b <branch name> ]
+--- e.g. git checkout -b some-branch
+
+2. make your changes to one/many of the files
+--- this is so you have something to commit
+
+3. stage your files using [ git add . ]
+--- this adds all (.) files to your commit
+
+4. commit your changes once you're happy [ git commit -m "<message>" ]
+--- e.g. git commit -m "changed whatever"
+
+5. push your changes to the server [  git push origin <branch> ]
+--- e.g. git push origin some-branch
+
+6. go view your pull request either by using the first link given or [ gh browse ]
+
+7. merge pull request on GitHub
+
+8. back in the CLI, go back to main [ git checkout main ]
+--- you should see your file revert back to what it looked like at the start of the previous commit
+--- this is fine because you haven't updated your version with main yet
+
+9. pull your changes from the GitHub repo using [ git pull ]

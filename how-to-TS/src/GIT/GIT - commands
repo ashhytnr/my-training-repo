@@ -1,0 +1,23 @@
+
+heh
+
+git checkout - very versatile command
+
+git log —oneline = lets you see the hash code so you can revert commits
+
+git restore file_name = restores a file to it’s state at the previous most recent commit - you cannot undo this since changed were never commited
+
+git restore —staged file_name = unstages files already in the staging area (using git add).
+
+git reset then the hash also works to undo commits but ONLY commits. useful if you want to undo the commit but not the work
+
+git revert - makes a new commit that matches the historical state of previous commit - better than git reset
+
+git stash - temporarily shelves changes you've made to your working copy so you can work on something else, you can come back to this.
+git stash pop - pop changes out of stash
+git stash apply - applies changes but leaves them in the stash
+
+.gitignore:
+Mypasswords.txt - ignores this specific file
+directory_name/ ignores everything in this dir
+*.sql - ignores everything ending with sql
